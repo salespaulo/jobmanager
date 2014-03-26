@@ -1,0 +1,47 @@
+<jobmanager>
+	<schedulers>
+		<scheduler>
+			<job name="ImsSdkImportCertificateStateJob" group="GROUP_1"
+					type="br.com.certisign.jobmanager.jobs.ImsSdkImportCertificateStateJob">
+				<dataMap>
+					<property name="imsConfigPath" value="${imsConfigPath}" />
+				</dataMap>
+			</job>
+			<trigger name="ImsSdkImportCertificateStateJobTrigger" group="GROUP_1" expression="${expressionImsSdkImportCertificateStateJob}" />
+		</scheduler>
+		
+ 		<scheduler>
+			<job name="ImsAlertCertificateExpiredJob" group="GROUP_1"
+					type="br.com.certisign.jobmanager.jobs.ImsAlertCertificateExpiredJob">
+				<dataMap>
+					<property name="imsConfigPath" value="${imsConfigPath}" />
+					<property name="location" value="files" />
+				</dataMap>
+			</job>
+			<trigger name="ImsAlertCertificateExpiredJobTrigger" group="GROUP_1" expression="${expressionImsAlertCertificateExpiredJob}" />
+		</scheduler>
+		
+		<scheduler>
+			<job name="ImsExportPendentRequestCertificateToGARJob" group="GROUP_1"
+					type="br.com.certisign.jobmanager.jobs.ImsExportPendentRequestCertificateToGARJob">
+				<dataMap>
+					<property name="imsConfigPath" value="${imsConfigPath}" />
+					<property name="location" value="files" />
+				</dataMap>
+			</job>
+			<trigger name="ImsExportPendentRequestCertificateToGARJobTrigger" group="GROUP_1" expression="${expressionExportPendentRequestCertificateToGARJob}" />
+		</scheduler>
+
+		<scheduler>
+			<job name="ImsGARImportRequestCertificateJob" group="GROUP_1"
+					type="br.com.certisign.jobmanager.jobs.ImsGARImportRequestCertificateJob">
+				<dataMap>
+					<property name="imsConfigPath" value="${imsConfigPath}" />
+					<property name="location" value="files" />
+				</dataMap>
+			</job>
+			<trigger name="ImsGARImportRequestCertificateJobTrigger" group="GROUP_1" expression="${expressionImsGARImportRequestCertificateJob}" />
+		</scheduler>
+	</schedulers>
+</jobmanager>
+

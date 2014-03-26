@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RequestTemplate>
+    <Name>MS_USER</Name>
+    <Description>Template de Usuario - AC Microsoft Enterprise</Description>
+    <Items>
+        <RequestTemplateItem>
+            <Key>CN</Key>
+            <Description>Common Name</Description>
+            <Order>0</Order>
+            <Required>true</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>E</Key>
+            <Description>Email</Description>
+            <Order>1</Order>
+            <Required>true</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>O</Key>
+            <Description>Empresa</Description>
+            <Order>2</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>OU1</Key>
+            <Description>Unidade Organizacional 1</Description>
+            <Order>3</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>OU2</Key>
+            <Description>Unidade Organizacional 2</Description>
+            <Order>4</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>        
+        <RequestTemplateItem>
+            <Key>L</Key>
+            <Description>Cidade</Description>
+            <Order>5</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>S</Key>
+            <Description>Estado</Description>
+            <Order>6</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>C</Key>
+            <Description>Pais</Description>
+            <Order>7</Order>
+            <Required>false</Required>
+        </RequestTemplateItem>
+    </Items>
+</RequestTemplate>

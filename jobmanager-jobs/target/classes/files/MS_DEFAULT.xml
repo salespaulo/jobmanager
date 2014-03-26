@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RequestTemplate>
+    <Name>MS_DEFAULT</Name>
+    <Description>Template Default da Microsoft</Description>
+    <Sections>
+        <RequestTemplateSection>
+            <Name>ID_INFO</Name>
+            <Description>Informações de identificação</Description>
+            <Active>true</Active>
+            <RequestTemplateFields>
+                <StringRequestTemplateField>
+                    <Name>Nome (Common Name)</Name>
+                    <ItemKey>CN</ItemKey>
+                </StringRequestTemplateField>
+                <StringRequestTemplateField>
+                    <Name>E-mail do certificado</Name>
+                    <ItemKey>CERTIFICATE_EMAIL</ItemKey>
+                </StringRequestTemplateField>
+                <StringRequestTemplateField>
+                    <Name>Organização</Name>
+                    <ItemKey>O</ItemKey>
+                </StringRequestTemplateField>
+                <StringRequestTemplateField>
+                    <Name>Unidade Organizacional Campo1</Name>
+                    <ItemKey>OU1</ItemKey>
+                </StringRequestTemplateField>
+                <StringRequestTemplateField>
+                    <Name>Cidade</Name>
+                    <ItemKey>L</ItemKey>
+                </StringRequestTemplateField>                
+                <StringRequestTemplateField>
+                    <Name>Estado</Name>
+                    <ItemKey>S</ItemKey>
+                </StringRequestTemplateField>                                
+                <StringRequestTemplateField>
+                    <Name>País</Name>
+                    <ItemKey>C</ItemKey>
+                </StringRequestTemplateField>                                                
+            </RequestTemplateFields>
+        </RequestTemplateSection>
+    </Sections>
+    <Items>
+        <RequestTemplateItem>
+            <Key>CN</Key>
+            <Order>0</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>CERTIFICATE_EMAIL</Key>
+            <Order>1</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>O</Key>
+            <Order>2</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>OU1</Key>
+            <Order>3</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>L</Key>
+            <Order>4</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>S</Key>
+            <Order>5</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+        <RequestTemplateItem>
+            <Key>C</Key>
+            <Order>6</Order>
+            <PageNumber>0</PageNumber>
+            <DefaultValue></DefaultValue>
+            <RequestTemplateFieldType>TEXT_AREA</RequestTemplateFieldType>
+        </RequestTemplateItem>
+    </Items>
+</RequestTemplate>

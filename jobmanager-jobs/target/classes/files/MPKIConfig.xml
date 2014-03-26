@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MPKIConfig>
+    <Account name="Teste">
+        <CertificateAuthorities>
+
+
+
+
+
+            <CertificateAuthority actionString="http://192.168.1.26/cgi-bin/sophialite.exe" description="Autoridade Certificadora de Testes MPKI" dn="O=Certisign Certificadora Digital Ltda.,OU=VeriSign Trust Network,OU=For Test Purposes Only,CN=Certisign Class 2 TEST CA" name="mpki1" propertiesLocation="C:\\imsconfig\\verisign_mkpi.properties">
+                <Base64Certificate>MIIC0jCCAjugAwIBAgIQNfKQFhTM8wSHMgWvnKbz+DANBgkqhkiG9w0BAQUFADCB
+ljEuMCwGA1UEChMlQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBMdGRh
+LjEfMB0GA1UECxMWVmVyaVNpZ24gVHJ1c3QgTmV0d29yazEfMB0GA1UECxMWRm9y
+IFRlc3QgUHVycG9zZXMgT25seTEiMCAGA1UEAxMZQ2VydGlzaWduIENsYXNzIDIg
+VEVTVCBDQTAeFw0wMTA2MjkwMDAwMDBaFw0xNDA0MTcyMzU5NTlaMFYxEjAQBgNV
+BAoTCUNlcnRpc2lnbjEMMAoGA1UECxMDUFNPMRswGQYDVQQLExJTb21lbnRlIFBh
+cmEgVGVzdGUxFTATBgNVBAMTDFBTTy1UZXN0ZSBDQTCBnzANBgkqhkiG9w0BAQEF
+AAOBjQAwgYkCgYEA27fvWFgQNJxH6RabMxAgNWKFKw9s1OIa2CFUmMU8Q/ImV58H
+qW9ohrDUjJNeM89Fgexi1OODYGUG4I08stR1VLendbykpL7fJhqxT5Z4o2zoAKg6
+wK31h5j2XReVE74TM2V5rYnp+1aHaZhanB+zBF7mTje8kdDNaoDnFsvZ0dsCAwEA
+AaNgMF4wDwYDVR0TBAgwBgEB/wIBADALBgNVHQ8EBAMCAQYwHQYDVR0OBBYEFNUW
+LwGZWpaMsI7FTT/3+McUfrpaMB8GA1UdIwQYMBaAFADcqf6oGkAIkFbo+7FQKcRb
+Nsp+MA0GCSqGSIb3DQEBBQUAA4GBAKLBLUI24BbzgOln4RwALM9y6M22jJoMHnHW
+ZqZFN5D/rGZPgmpw440rHi7gQIrozUYU1fgeQWxx1XRLZQ8Ep2fHFOjGXtXfvSmQ
+Gru9aM/w464tjXMZFF1rd6mt6Mo9WO09VbvfnzhsGeEbNRtoNx/JfNqs1pkOYfPI
+oBUs+Qwx</Base64Certificate>
+                <CertificateTypes>
+                    <CertificateType requestTemplateId="MPKI_USER" description="Certificado de Email Seguro" name="EmailSeguro">
+                        <CSRInfo keySize="1024">
+                            <RequestItems>
+                             <RequestItem id="public_key"/>
+                             <RequestItem id="mail_firstName"/>
+                             <RequestItem id="mail_lastName"/>
+                             <RequestItem id="mail_email"/>
+                             <RequestItem id="jobTitle"/>
+                             <RequestItem id="employeeID"/>
+                             <RequestItem id="mailStop"/>
+                             <RequestItem id="additional_field3"/> <!-- comentarios -->
+                             <RequestItem id="additional_field4"/><!-- CPF -->
+                             <RequestItem id="challenge"/>
+                            </RequestItems>
+                            <HiddenItems>
+                              <HiddenItem value="AutoAuthOSUserSubmit" id="operation"/>
+                              <HiddenItem value="NO" id="authenticate"/>
+                              <HiddenItem value="../fdf/client/userEnrollCSGAR.fdf" id="form_file"/>
+                            </HiddenItems>
+                            <RevokeHiddenItems>
+                              <HiddenItem value="../fdf/client/userRevokeAAGAR.fdf" id="form_file"/>
+                              <HiddenItem value="NO" id="certSerial"/>
+                            </RevokeHiddenItems>
+                        </CSRInfo>
+                    </CertificateType>
+                </CertificateTypes>
+            </CertificateAuthority>
+        </CertificateAuthorities>
+    </Account>
+</MPKIConfig>

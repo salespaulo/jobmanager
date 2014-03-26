@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>br.com.certisign.jobmanager</groupId>
+    <artifactId>jobmanager-parent</artifactId>
+    <version>1.0</version>
+  </parent>
+
+  <groupId>br.com.certisign.jobmanager</groupId>
+  <artifactId>jobmanager-core</artifactId>
+  <version>0.0.1</version>
+
+  <name>jobmanager-core</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jmock</groupId>
+      <artifactId>jmock-junit4</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.quartz-scheduler</groupId>
+      <artifactId>quartz</artifactId>
+    </dependency>
+    
+    <dependency>
+	  <groupId>com.thoughtworks.xstream</groupId>
+	  <artifactId>xstream</artifactId>
+	</dependency>
+	
+    <dependency>
+      <groupId>xpp3</groupId>
+      <artifactId>xpp3_min</artifactId>
+    </dependency>
+    
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <filters>
+      <filter>${project.basedir}/snapshot.properties</filter>
+    </filters>
+  </build>
+  
+  <profiles>
+    <profile>
+      <id>release-profile</id>
+      
+      <build>
+        <resources>
+          <resource>
+            <directory>${project.basedir}/src/main/resources</directory>
+            <filtering>true</filtering>
+          </resource>
+        </resources>
+        <filters>
+          <filter>${project.basedir}/release.properties</filter>
+        </filters>
+      </build>
+    </profile>
+  </profiles>
+
+</project>
