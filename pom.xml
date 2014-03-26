@@ -3,18 +3,18 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>br.com.certisign.jobmanager</groupId>
+  <groupId>org.zsis.jobmanager</groupId>
   <artifactId>jobmanager-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
 
-  <name>Certisign: Jobmanager Parent</name>
-  <url>http://www.certisign.com.br/jobmanager</url>
+  <name>Z Sistemas: Jobmanager Parent</name>
+  <url>http://www.zsistemas.com.br/jobmanager</url>
   <inceptionYear>2011</inceptionYear>
 
   <organization>
-    <name>Certisign Certificadora Digital S.A.</name>
-    <url>http://www.certisign.com.br</url>
+    <name>Z Sistemas S.A.</name>
+    <url>http://www.zsistemas.com.br</url>
   </organization>
 
   <properties>
@@ -38,10 +38,7 @@
     <version.persistence-api.jar>1.0</version.persistence-api.jar>
     <version.jta.jar>1.1</version.jta.jar>
     <version.commons-logging.jar>1.1.1</version.commons-logging.jar>
-    
-    <version.certisign-core.jar>IMESP_2.2.0.3</version.certisign-core.jar>
-    <version.certisign-ims.jar>IMESP_2.2.0.3</version.certisign-ims.jar>
-    <version.certisign-ra.jar>IMESP_2.2.0.3</version.certisign-ra.jar>
+
     <version.jtds.jar>1.2.2</version.jtds.jar>
     <version.sdk-provider.jar>1.0</version.sdk-provider.jar>
     <version.sdk-base.jar>1.0</version.sdk-base.jar>
@@ -54,7 +51,7 @@
     <!-- Nomes dos artefatos -->
     <build.snapshot.final.name>${project.artifactId}_${project.version}_${maven.build.timestamp}</build.snapshot.final.name>
     <build.release.final.name>${project.artifactId}_${project.version}</build.release.final.name>
-    
+
     <!-- Versão do java -->
     <java.source.version>1.6</java.source.version>
     <java.target.version>1.6</java.target.version>
@@ -66,7 +63,7 @@
       <name>ASF Maven 2 Snapshot</name>
       <url>http://people.apache.org/repo/m2-snapshot-repository</url>
     </repository>
-    
+
     <repository>
       <id>central</id>
       <name>Maven Repository Switchboard</name>
@@ -102,19 +99,19 @@
         <version>${version.jmock.jar}</version>
         <scope>test</scope>
       </dependency>
-      
+
       <dependency>
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
         <version>${version.commons-logging.jar}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
         <version>${version.slf4j.jar}</version>
       </dependency>
-    
+
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
@@ -126,7 +123,7 @@
 	    <artifactId>xstream</artifactId>
 	    <version>${version.xstream.jar}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>xpp3</groupId>
         <artifactId>xpp3_min</artifactId>
@@ -183,7 +180,7 @@
           <doctitle>${project.name} ${project.version} API Documentation</doctitle>
         </configuration>
       </plugin>
-    
+
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
@@ -200,7 +197,7 @@
       </plugin>
     </plugins>
   </reporting>
-  
+
   <build>
     <finalName>${build.snapshot.final.name}</finalName>
 
@@ -218,7 +215,7 @@
           <showDeprecations>true</showDeprecations>
         </configuration>
       </plugin>
-      
+
       <!-- Alterando o encoding do resources filtering para UTF-8 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -296,7 +293,5 @@
 
   <modules>
     <module>jobmanager-core</module>
-    <module>jobmanager-jobs</module>
-    <module>jobmanager-swing</module>
   </modules>
 </project>

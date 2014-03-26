@@ -1,7 +1,7 @@
 <jobmanager>
 	<schedulers>
 		<scheduler>
-			<job name="lala" group="lele" type="br.com.certisign.jobmanager.core.Test">
+			<job name="lala" group="lele" type="org.zsis.jobmanager.core.Test">
 				<dataMap>
 					<property name="teste" value="alala" />
 				</dataMap>
