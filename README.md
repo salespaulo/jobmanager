@@ -1,4 +1,4 @@
 jobmanager-parent
 =================
 
-Um configurador XML de jobs para o Quartz.
+A [quartz](http://www.quartz-scheduler.org/) configurable engine in xml.
