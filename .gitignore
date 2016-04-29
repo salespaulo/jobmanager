@@ -1,3 +1,9 @@
+target/
+.settings
+.classpath
+.project
+.idea/
+*.iml
 *.class
 
 # Package Files #

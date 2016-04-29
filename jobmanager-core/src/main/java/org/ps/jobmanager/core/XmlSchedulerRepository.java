@@ -8,7 +8,7 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto esta sujeito aos termos de licenca
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -54,7 +54,7 @@ class XmlSchedulerRepository implements SchedulerRepository {
 	private SchedulerContexts schedulers;
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerRepository#get()
+	 * @see SchedulerRepository#get()
 	 */
 	public SchedulerContexts get() {
 		logger.debug("Retornando SchedulerContexts do repositório: {}", schedulers);
@@ -64,7 +64,7 @@ class XmlSchedulerRepository implements SchedulerRepository {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerRepository#clear()
+	 * @see SchedulerRepository#clear()
 	 */
 	@Override
 	public void clear() {
@@ -75,7 +75,7 @@ class XmlSchedulerRepository implements SchedulerRepository {
 	}
 	
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerRepository#refresh()
+	 * @see SchedulerRepository#refresh()
 	 */
 	@Override
 	public void refresh() {
@@ -83,7 +83,7 @@ class XmlSchedulerRepository implements SchedulerRepository {
 	}
 	
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerRepository#add(org.zsis.jobmanager.core.SchedulerContexts)
+	 * @see SchedulerRepository#add(SchedulerContexts)
 	 */
 	@Override
 	public void save(SchedulerContexts schedulers) {

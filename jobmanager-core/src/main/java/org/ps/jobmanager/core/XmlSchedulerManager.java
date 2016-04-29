@@ -8,7 +8,7 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto é sujeito aos termos de licença
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 import java.text.ParseException;
 import java.util.Date;
@@ -19,7 +19,7 @@ import org.quartz.JobDetail;
 import org.quartz.SchedulerException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.zsis.jobmanager.core.SchedulerContexts.SchedulerContext;
+import org.ps.jobmanager.core.SchedulerContexts.SchedulerContext;
 
 
 /**
@@ -66,7 +66,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 	
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#doSchedulers()
+	 * @see SchedulerManager#doSchedulers()
 	 */
 	@Override
 	public void doSchedulers() {
@@ -74,7 +74,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#finalizeSchedulers()
+	 * @see SchedulerManager#finalizeSchedulers()
 	 */
 	@Override
 	public void finalizeSchedulers() {
@@ -89,7 +89,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#refresh()
+	 * @see SchedulerManager#refresh()
 	 */
 	@Override
 	public void refreshSchedulers() {
@@ -99,7 +99,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#clear()
+	 * @see SchedulerManager#clear()
 	 */
 	@Override
 	public void clearSchedulers() {
@@ -119,7 +119,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 	
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#storeSchedulers(org.zsis.jobmanager.core.SchedulerContexts)
+	 * @see SchedulerManager#storeSchedulers(SchedulerContexts)
 	 */
 	@Override
 	public void storeSchedulers(SchedulerContexts schedulers) {
@@ -127,7 +127,7 @@ class XmlSchedulerManager implements SchedulerManager {
 	}
 	
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerManager#getSchedulers()
+	 * @see SchedulerManager#getSchedulers()
 	 */
 	@Override
 	public SchedulerContexts getSchedulers() {

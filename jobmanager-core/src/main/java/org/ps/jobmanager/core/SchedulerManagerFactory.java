@@ -8,7 +8,7 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto é sujeito aos termos de licença
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 /**
  * Classe que retorna instâncias específicas que implementam a 

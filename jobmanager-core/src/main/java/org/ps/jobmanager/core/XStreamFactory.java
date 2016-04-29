@@ -8,12 +8,10 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto é sujeito aos termos de licença
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.zsis.jobmanager.core.SchedulerContexts.SchedulerContext;
-
 
 import com.thoughtworks.xstream.XStream;
 
@@ -44,7 +42,7 @@ class XStreamFactory {
 			super();
 			logger.debug("Configurando XStream para JobManager");
 			this.alias(SCHEDULERS_ALIAS, SchedulerContexts.class);
-			this.alias(SCHEDULER_ALIAS, SchedulerContext.class);
+			this.alias(SCHEDULER_ALIAS, SchedulerContexts.SchedulerContext.class);
 			this.alias(JOB_ALIAS, SchedulerContexts.JobContext.class);
 			this.alias(TRIGGER_ALIAS, SchedulerContexts.TriggerContext.class);
 			

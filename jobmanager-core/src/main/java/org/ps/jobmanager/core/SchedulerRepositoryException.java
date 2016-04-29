@@ -8,7 +8,7 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto esta sujeito aos termos de licenca
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 /**
  * TODO (psales 14/03/2011) - javadoc

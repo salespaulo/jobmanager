@@ -8,7 +8,7 @@
  * ------------- Z Sistemas S.A. --------------
  * O uso deste produto esta sujeito aos termos de licenca
  */
-package org.zsis.jobmanager.core;
+package org.ps.jobmanager.core;
 
 /**
  * Classe que implementa {@link SchedulerConfigurator} através da leitura 
@@ -58,7 +58,7 @@ public class XmlSchedulerConfigurator implements SchedulerConfigurator {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.zsis.jobmanager.core.SchedulerConfigurator#getSchedulerRepository()
+	 * @see SchedulerConfigurator#getSchedulerRepository()
 	 */
 	@Override
 	public SchedulerRepository getSchedulerRepository() {

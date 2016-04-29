@@ -3,18 +3,18 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.zsis.jobmanager</groupId>
+  <groupId>org.ps.jobmanager</groupId>
   <artifactId>jobmanager-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
 
-  <name>Z Sistemas: Jobmanager Parent</name>
+  <name>${project.organization.name}: ${project.artifactId}</name>
   <url>http://www.zsistemas.com.br/jobmanager</url>
   <inceptionYear>2011</inceptionYear>
 
   <organization>
-    <name>Z Sistemas S.A.</name>
-    <url>http://www.zsistemas.com.br</url>
+    <name>ORG PS</name>
+    <url>http://www.ps.org</url>
   </organization>
 
   <properties>
